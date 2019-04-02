@@ -29,3 +29,13 @@ Steps :
 - changed pages's name
 - changed the home route to : (because it will always render the home page if I don't)
   Route path="/" exact component={Home}/
+
+
+=================
+
+Data :
+
+The goal is to make the app able to acces data (in a local json file) throught usage of services.
+
+Based on :
+https://github.com/drminnaar/react-movie-cards
