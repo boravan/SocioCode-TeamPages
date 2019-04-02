@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
 import "./App.css";
+import DataService from "./services/DataService";
 
 const Home = () => (
   <div>
@@ -21,7 +22,14 @@ const Team2 = () => (
 );
 
 class App extends Component {
+  state = { teams: [] };
+
+  componentDidMount() {
+    this.setState({ teams: DataService.getTeams() });
+  }
+
   render() {
+    console.log(this.state);
     return (
       <div>
         <ul>

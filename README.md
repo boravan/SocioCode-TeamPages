@@ -13,9 +13,8 @@ Other docs :
 https://reacttraining.com/react-router/web/guides/quick-start
 https://github.com/reactjs/react-router-tutorial
 
-
-
-
+Using :
+- react-router
 
 Steps : 
 - npx create-react-app <name of the app>
@@ -31,7 +30,9 @@ Steps :
   Route path="/" exact component={Home}/
 
 
+
 =================
+
 
 Data :
 
@@ -39,3 +40,15 @@ The goal is to make the app able to acces data (in a local json file) throught u
 
 Based on :
 https://github.com/drminnaar/react-movie-cards
+
+Using :
+- State concept that contain team data
+- JSON file with team data inside
+- Lifecycle React method (componentDidMount for now)
+
+Steps :
+- Create a folder named services
+- Inside, create json file with data, and js file (service)
+- Write some dummy data in json file (for now)
+- Write the class DataService with method to retrieve data from json file 
+- Create state in App.js, setState inside componentDidMount() with the service call, 
