@@ -1,27 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import { Route, Link } from "react-router-dom";
 import "./App.css";
 import DataService from "./services/DataService";
+import Home from "./pages/Home";
+import Team1 from "./pages/Team1";
+import Team2 from "./pages/Team2";
+import TeamList from "./pages/TeamList";
 
-const Home = () => (
-  <div>
-    <h2> Home </h2>
-  </div>
-);
-
-const Team1 = () => (
-  <div>
-    <h2> Team 1 Page </h2>
-  </div>
-);
-
-const Team2 = () => (
-  <div>
-    <h2> Team 2 Page </h2>
-  </div>
-);
-
-class App extends Component {
+class App extends React.Component {
   state = { teams: [] };
 
   componentDidMount() {
@@ -43,6 +29,8 @@ class App extends Component {
             <Link to="/team_2">Team 2</Link>
           </li>
         </ul>
+
+        <TeamList teams={this.state.teams} />
 
         <Route path="/" exact component={Home} />
         <Route path="/team_1" component={Team1} />

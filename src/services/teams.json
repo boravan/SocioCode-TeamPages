@@ -3,7 +3,7 @@
     "id": 1,
     "title": "team1",
     "image": "../images/Kingsglaive_Final_Fantasy_XV.jpg",
-    "description": "Blablabla",
+    "description": "Blablabla Team 1",
     "members": "Boravan",
     "money": 300
   },
@@ -11,8 +11,8 @@
     "id": 2,
     "title": "team2",
     "image": "../images/Kingsglaive_Final_Fantasy_XV.jpg",
-    "description": "Blablabla",
-    "members": "Lawrence",
+    "description": "Blablabla Team 2",
+    "members": "Laurence",
     "money": 400
   }
 ]
